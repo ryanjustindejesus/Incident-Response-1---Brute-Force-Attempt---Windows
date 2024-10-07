@@ -67,7 +67,7 @@ SecurityEvent
 ```
  
 ![image](https://github.com/user-attachments/assets/81553fc9-bf23-41a6-9e03-31306d7bf1ad)
-- <b>Based on the results, I will conclude this as a False Positive due to the lack of additional indicators. No other malicious indicators (like unusual account privileges, lateral movement, or known malicious activity) are shown in the log, suggesting the alert may have been triggered prematurely without sufficient evidence</b>
+- <b>Based on the results, I will conclude this as a False Positive - Incorrect Alert Logic due to the lack of additional indicators. No other malicious indicators (like unusual account privileges, lateral movement, or known malicious activity) are shown in the log, suggesting the alert may have been triggered prematurely without sufficient evidence</b>
 
 ## Incident Management Playbook 
 - <b>Incident Description</b>
