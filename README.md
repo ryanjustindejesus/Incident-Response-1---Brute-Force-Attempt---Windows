@@ -7,8 +7,6 @@
 - <b>Microsoft Azure</b> 
 - <b>Microsoft Sentinel</b>
 - <b>Log Analytics Workspace</b>
-- <b>Description</b>
-- <b>Description</b>
 
 <h2>Operating Systems</h2>
 
