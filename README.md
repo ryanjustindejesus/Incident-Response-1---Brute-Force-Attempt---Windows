@@ -1,6 +1,6 @@
 <h1>Incident Response: Brute Force Attempt - Windows</h1>
 
-- <b>This tutorial outlines the configuration of performing incident response using Microsoft Sentinel and Log Analytics Workspace</b>
+- <b>This tutorial outlines the configuration of performing incident response for a Windows brute force attempt using Microsoft Sentinel and Log Analytics Workspace</b>
 
 <h2>Environments and Technologies Used</h2>
 
