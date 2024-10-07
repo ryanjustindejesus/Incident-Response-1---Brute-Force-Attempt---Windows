@@ -1,6 +1,6 @@
 <h1>Incident Response: Brute Force Attempt - Windows</h1>
 
-- <b>This tutorial outlines the configuration </b>
+- <b>This tutorial outlines the configuration of performing incident response using Microsoft Sentinel and Log Analytics Workspace</b>
 
 <h2>Environments and Technologies Used</h2>
 
@@ -69,4 +69,22 @@ SecurityEvent
 ```
  
 ![image](https://github.com/user-attachments/assets/81553fc9-bf23-41a6-9e03-31306d7bf1ad)
-- <b>Based on the results, I will conclude this as a False Positive due to the lack of additional indicators. No other malicious indicators (like unusual account privileges, lateral movement, or known malicious activity) are shown in the log, suggesting the alert may have been triggered prematurely without sufficient evidence.</b>
+- <b>Based on the results, I will conclude this as a False Positive due to the lack of additional indicators. No other malicious indicators (like unusual account privileges, lateral movement, or known malicious activity) are shown in the log, suggesting the alert may have been triggered prematurely without sufficient evidence</b>
+
+## Incident Management Playbook 
+- <b>Incident Description</b>
+    - This incident involves observation of potential brute force attempts against a Windows VM.
+
+- <b>Initial Response Actions</b>
+    - Verify the authenticity of the alert or report.
+    - Immediately isolate the machine and change the password of the affected user
+    - Identify the origin of the attacks and determine if they are attacking or involved with anything else
+    - Determine how and when the attack occurred
+        - Are the NSGs not being locked down? If so, check other NSGs
+    - Assess the potential impact of the incident.
+        - What type of account was it? Permissions?
+
+- <b>Containment and Recovery</b>
+    - Lock down the NSG assigned to that VM/Subnet, either entirely, or to allow only necessary traffic
+    - Reset the affected user’s password
+    - Enable MFA
